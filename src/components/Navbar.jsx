@@ -1,5 +1,4 @@
 import { React } from "react";
-import "../styles/Navbar.css";
 const Navbar = ({ data }) => {
   const linksList = ["HOME", "RESUME", "PROJECTS"];
   return (
@@ -15,7 +14,7 @@ const Navbar = ({ data }) => {
             return (
               <div className="links" key={index}>
                 <a
-                  href="../Naqiuddin Mubeen.pdf"
+                  href="/Naqiuddin Mubeen.pdf"
                   download={"Naqiuddin Mubeen.pdf"}
                   className="links-btn"
                 >

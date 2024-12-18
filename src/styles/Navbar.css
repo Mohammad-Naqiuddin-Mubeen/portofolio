@@ -1,6 +1,6 @@
 @font-face {
   font-family: linkFont;
-  src: url("../fonts/link.ttf");
+  src: url("/fonts/link.ttf");
 }
 .navbar {
   color: white;

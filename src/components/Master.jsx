@@ -7,6 +7,7 @@ import "../styles/ProjectsSection.css";
 import "../styles/ContactSection.css";
 import "../styles/Footer.css";
 import "../styles/Media.css";
+import "../styles/Navbar.css";
 
 const Master = () => {
   return <Homepage></Homepage>;
