@@ -2,7 +2,7 @@ import { React } from "react";
 const Navbar = ({ data }) => {
   const linksList = ["HOME", "RESUME", "PROJECTS"];
   return (
-    <div className="navbar">
+    <div className="navbar" id="nav">
       <div className="logoContainer">
         <a href="/">
           <h1 className="logo">MUBEEN</h1>
@@ -14,8 +14,8 @@ const Navbar = ({ data }) => {
             return (
               <div className="links" key={index}>
                 <a
-                  href="/Naqiuddin Mubeen.pdf"
-                  download={"Naqiuddin Mubeen.pdf"}
+                  href="Naqiuddin Mubeen.pdf"
+                  download="Naqiuddin Mubeen.pdf"
                   className="links-btn"
                 >
                   {links}

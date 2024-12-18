@@ -41,7 +41,7 @@ const Info = ({ parent }) => {
             <h1>
               CREATIVE <span>DEVELOPER</span>
             </h1>
-            <h2>Mohammad N. Mubeen / Web Developer</h2>
+            <h2>Mohammad Naqiuddin Mubeen / Web Developer</h2>
           </div>
         </div>
         <div className="infoContainer">

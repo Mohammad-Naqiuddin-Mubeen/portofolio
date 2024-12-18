@@ -14,6 +14,7 @@
   font-family: agave, sans-serif;
   a {
     all: unset;
+    font-size: 25px;
     cursor: pointer;
   }
 }
