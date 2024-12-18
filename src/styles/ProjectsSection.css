@@ -1,0 +1,138 @@
+:root {
+  --bor: 5px solid gray;
+}
+.projectsContainer {
+  color: white;
+  font-family: agave, sans-serif;
+  .explore-work {
+    margin: 20px;
+  }
+}
+
+.projectsBox {
+  h1,
+  h2,
+  ul {
+    color: #b0b0b0;
+  }
+}
+
+.project1,
+.project2,
+.project3 {
+  padding: 15px;
+  position: relative;
+  border: var(--bor);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.project1 {
+  border: var(--bor);
+  border-left: none;
+  margin-left: 20px;
+}
+.project2 {
+  border-left: var(--bor);
+  border-bottom: var(--bor);
+  border-radius: 20px 0px 0px 20px;
+  margin-right: 20px;
+  margin-top: -5px;
+  border-right: none;
+}
+.project3 {
+  border: var(--bor);
+  border-left: none;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+.projectImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--bor);
+}
+
+.description ul {
+  padding: 0px 20px;
+  list-style-type: disc;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.description {
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  h2 {
+    font-weight: 800;
+  }
+  h3 {
+    font-weight: 400;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.border-corner-radius1 {
+  position: absolute;
+  top: -25px;
+  left: -4.5px;
+  background-color: transparent;
+  border-left: var(--bor);
+  border-top: var(--bor);
+  border-radius: 20px 0px 0px 0px;
+  width: 100px;
+  height: 100px;
+}
+.border-corner-radius2 {
+  position: absolute;
+  top: 25px;
+  left: 4.5px;
+  background-color: transparent;
+  border-left: var(--bor);
+  border-top: var(--bor);
+  border-radius: 20px 0px 0px 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.see-more {
+  text-align: center;
+  border: 1px solid gray;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  &:hover {
+    color: #b0b0b0;
+    i {
+      animation: link 2s ease-in-out infinite;
+    }
+  }
+  a {
+    font-size: 30px;
+    text-decoration: none;
+    color: unset;
+  }
+  i {
+    font-size: 25px;
+    margin: 0px 10px;
+    position: relative;
+  }
+}
+
+@keyframes link {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
+}

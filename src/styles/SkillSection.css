@@ -1,0 +1,97 @@
+@font-face {
+  font-family: agave;
+  src: url("../fonts/agave.ttf");
+}
+.skillsContainer {
+  color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-family: agave, sans-serif;
+}
+
+.sectionName {
+  color: white;
+  font-family: agave, sans-serif;
+  grid-column: 1 / 3;
+  margin-left: 20px;
+  h1 {
+    font-size: 50px;
+  }
+}
+
+.skillIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.textSkills {
+  font-size: 30px;
+  color: #b0b0b0;
+}
+
+.textSkills,
+.skillIcons {
+  padding: 30px 50px;
+}
+
+.iconElements {
+  background-color: #eff1f3;
+  width: 120px;
+  height: fit-content;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.iconElements > p {
+  text-align: center;
+  background-image: linear-gradient(#6d6d6d, #454545, #262626);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.icons {
+  height: 80px;
+  width: 100%;
+}
+
+.customIcons {
+  font-size: 80px;
+  background-image: linear-gradient(#6d6d6d, #454545, #262626);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#customIconsText {
+  font-size: 50px;
+  background-image: linear-gradient(#6d6d6d, #454545, #262626);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.projectExplore {
+  grid-column: 1 / 3;
+  color: #b5b5b5;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  transition: 1s;
+  height: 20px;
+  &:hover {
+    cursor: pointer;
+    margin-left: 20px;
+    color: white;
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: linkFont;
+  src: url("../fonts/link.ttf");
+}
+.navbar {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 60px;
+}
+
+.logoContainer {
+  font-family: agave, sans-serif;
+  a {
+    all: unset;
+    cursor: pointer;
+  }
+}
+
+.linksContainer {
+  font-family: linkFont, sans-serif;
+  display: flex;
+  gap: 50px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.links .links-btn {
+  all: unset;
+  cursor: pointer;
+  &:hover {
+    color: #b0b0b0;
+  }
+  &:active {
+    color: white;
+  }
+}

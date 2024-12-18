@@ -1,0 +1,123 @@
+@font-face {
+  font-family: agave;
+  src: url("../fonts/agave.ttf");
+}
+
+.section1 {
+  height: calc(100vh - 60px);
+  display: grid;
+  grid-template-rows: 65% 25%;
+  align-content: space-around;
+}
+
+.skillSection,
+.projectSection,
+.contactSection {
+  min-height: min-content;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.mobile-info-container {
+  color: white;
+  font-family: agave, sans-serif;
+  display: none;
+}
+
+.name {
+  border-bottom: 1px solid gray;
+  height: 100%;
+}
+.nameBox {
+  color: white;
+  width: min-content;
+  display: grid;
+  position: absolute;
+  h2 {
+    position: absolute;
+    bottom: -25px;
+    right: 0px;
+    color: #e2e2e2;
+    background-color: transparent;
+    font-family: agave, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    overflow: hidden;
+    max-height: 0px;
+    height: 20px;
+    animation: name-transition 2s 3.5s forwards;
+  }
+}
+
+.nameBox > h1 {
+  font-family: segoe UI, sans-serif;
+  width: min-content;
+  font-size: 10em;
+  line-height: 0.9;
+  pointer-events: none;
+  overflow: hidden;
+  animation: creative 3s steps(2000);
+  span {
+    background-image: linear-gradient(#d1d1d1, #6d6d6d, #454545, #262626);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.infoContainer {
+  color: #b5b5b5;
+  font-family: agave, sans-serif;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  border-bottom: 1px solid gray;
+}
+
+.comment > p {
+  font-size: 20px;
+  span {
+    color: #818589;
+    font-weight: 800;
+  }
+}
+
+.info {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  p {
+    font-size: 20px;
+    width: 650px;
+    color: #b0b0b0;
+  }
+}
+
+.explore-work > p {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: 1s;
+  &:hover {
+    cursor: pointer;
+    margin-left: 20px;
+    color: white;
+  }
+}
+
+@keyframes creative {
+  from {
+    max-width: 0%;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+@keyframes name-transition {
+  from {
+    max-height: 0%;
+  }
+  to {
+    max-height: 100%;
+  }
+}
