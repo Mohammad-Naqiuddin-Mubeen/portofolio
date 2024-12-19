@@ -4,7 +4,7 @@ const Navbar = ({ data }) => {
   return (
     <div className="navbar" id="nav">
       <div className="logoContainer">
-        <a href="/">
+        <a href="/portofolio/">
           <h1 className="logo">MUBEEN</h1>
         </a>
       </div>
@@ -25,7 +25,7 @@ const Navbar = ({ data }) => {
           } else if (links === "HOME") {
             return (
               <div className="links" key={index}>
-                <a href="/" className="links-btn">
+                <a href="/portofolio/" className="links-btn">
                   {links}
                 </a>
               </div>
